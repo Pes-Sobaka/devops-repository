@@ -1,0 +1,15 @@
+project: enterprise_core
+version: 2.1.0
+maintenance_mode: false
+servers:
+  - host: 10.0.0.10
+    role: frontend
+    cpu_cores: 4
+  - host: 10.0.0.11
+    role: backend
+    cpu_cores: 8
+notifications:
+  channels:
+    - telegram
+    - slack
+  alert_level: high
